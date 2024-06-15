@@ -1,0 +1,8 @@
+name = input("Enter your name:")
+brith_day = input("Enter your brithday:")
+brith_month = input("Enter your brith month:")
+brith_year = input("Enter your brith year:")
+color = input("Enter your favorite color:")
+print(f"My name is {name}.")
+print(f"I was born {brith_month} {brith_day}, {brith_year} ")
+print(f"My favorite color is {color}")
