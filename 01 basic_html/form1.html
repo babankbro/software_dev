@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>กรอกข้อมูล</title>
+    </head>
+    <body>
+       <div>
+        <input type="text" name="username" placeholder="Username"/>
+        <input type="password" name="password" placeholder="Passoword"/>
+       </div>
+
+       <div>
+        <input type="radio" name="color" value="red" > Red
+        <input type="radio" name="color" value="green" checked="True"> Green
+        <input type="radio" name="color" value="blue" > Blue
+        <input type="radio" name="color" value="other" > Other
+       </div>
+
+       <div>
+        <input name="province" list="provinces" placeholder="จังหวัด">
+        <datalist id="provinces">
+            <option>กาฬสินธุ์</option>
+            <option>ร้อยเอ็ด</option>
+            <option>มหาสารคาม</option>
+            <option>ขอนเเก่น</option>
+        </datalist>
+       </div>
+    </body>
+</html>

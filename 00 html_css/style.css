@@ -1,0 +1,63 @@
+:root {
+    /* Enhanced color scheme */
+    --background-color: #1c1c1e; /* Dark background */
+    --primary-color: #06b6d4; /* Bright cyan for primary elements */
+    --accent-color: #ef4444; /* Bright red for accents */
+    --text-color: #f8fafc; /* Off-white for text */
+    --hover-color: #2563eb; /* Blue for hover states */
+  
+    /* Container styling */
+    --container-padding: 20px;
+    --container-max-width: 1200px;
+  
+    /* Gradient backgrounds */
+    --gradient-background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  }
+  
+  body {
+    background-color: var(--background-color);
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    transition: background-color 0.3s ease; /* Smooth background transition */
+  }
+  
+  .name {
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
+    justify-content: center; /* Centers children vertically */
+    padding: var(--container-padding);
+    max-width: var(--container-max-width);
+    margin: 0 auto; /* Centering the container */
+    height: 100vh;
+    box-sizing: border-box;
+    background: var(--gradient-background); /* Applying gradient background */
+    border-radius: 8px; /* Soft rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  @media (min-width: 768px) {
+    .name {
+      flex-direction: row; /* Horizontal layout on larger screens */
+      justify-content: space-around; /* Space distribution */
+    }
+  }
+  
+  .name:hover {
+    background-color: var(--hover-color); /* Change background on hover */
+  }
+  
+  .child {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px; /* Rounded corners for child elements */
+    background-color: rgba(255, 255, 255, 0.1); /* Slight background for contrast */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .child:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Lighten background on hover */
+  }
+  

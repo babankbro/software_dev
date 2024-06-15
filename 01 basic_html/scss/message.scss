@@ -1,0 +1,25 @@
+%message{
+    padding: 20px;
+    margin: 10px;
+    border: solid 3px;
+    text-align: center;
+    color: white;
+ }
+
+ .msucess{
+    @extend %message;
+    background-color: green;
+    border-color: rgb(6, 93, 6);
+ }
+
+ .mwarning{
+    @extend %message;
+    background-color: orange;
+    border-color: rgb(78, 54, 11);
+ }
+
+ .merror{
+    @extend %message;
+    background-color: red;
+    border-color:rgb(100, 17, 17);
+ }
